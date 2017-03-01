@@ -25,13 +25,12 @@ body, html {
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     font-weight: 400;
-    line-height: 30px;
 }
 .ba-header-flex {
     display: flex;
     flex-wrap: wrap;
 }
-.ba-container {
+.ba-header-container {
     max-width: 1145px;
     margin: 0 auto;
 }
@@ -42,7 +41,7 @@ body, html {
     background: url("../assets/3-layers.png")50% no-repeat;
     background-size: cover;
 }
-.ba-container {
+.ba-header-container {
     height: inherit;
 }
 .ba-header-flex {
@@ -83,4 +82,32 @@ header.ba-header-flex {
 .ba-link__add-content:after {
     content: '/';
 }
-
+/*Texts Section*/
+.ba-texts-section {
+    height: 595px;
+}
+.ba-texts-container {
+    max-width: 1145px;
+    height: inherit;
+    margin: 0 auto;
+}
+.ba-texts-flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.ba-about-us,
+.ba-what-we-do {
+    max-width: 555px;
+    padding-top: 140px;
+}
+.ba-about-us__description,
+.ba-what-we-do__description {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.ba-about-us__text,
+.ba-what-we-do__text {
+    line-height: 30px;
+}
