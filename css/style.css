@@ -37,12 +37,12 @@ body, html {
 /*Header section*/
 
 .ba-header-section {
-    height: 500px;
+    min-height: 500px;
     background: url("../assets/3-layers.png")50% no-repeat;
     background-size: cover;
 }
 .ba-header-container {
-    height: inherit;
+    min-height: inherit;
 }
 .ba-header-flex {
     flex-direction: column;
@@ -84,12 +84,13 @@ header.ba-header-flex {
 }
 /*Texts Section*/
 .ba-texts-section {
-    height: 595px;
+    min-height: 595px;
 }
 .ba-texts-container {
     max-width: 1145px;
-    height: inherit;
+    min-height: inherit;
     margin: 0 auto;
+    margin-top: 150px;
 }
 .ba-texts-flex {
     display: flex;
@@ -100,7 +101,6 @@ header.ba-header-flex {
 .ba-about-us,
 .ba-what-we-do {
     max-width: 555px;
-    padding-top: 140px;
 }
 .ba-about-us__description,
 .ba-what-we-do__description {
@@ -110,4 +110,77 @@ header.ba-header-flex {
 .ba-about-us__text,
 .ba-what-we-do__text {
     line-height: 30px;
+}
+/*Benefits Section*/
+.ba-benefits-section {
+    min-height: 660px;
+}
+.ba-benefits-container {
+    max-width: 1145px;
+    min-height: inherit;
+    margin: 0 auto;
+}
+.ba-benefits-flex {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+}
+.ba-benefits-header-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.ba-benefits__title {
+    margin-bottom: 29px;
+}
+.ba-benefits__text {
+    max-width: 716px;;
+    line-height: 24px;
+    text-align: center;
+}
+.ba-benefits-content {
+    max-width: 1145px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+.ba-benefits__item {
+    max-width: 360px;
+}
+.ba-benefits__item-title {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.ba-benefits__item-description {
+    line-height: 30px;
+}
+.ba-benefits__item-title:before {
+    width: 40px;
+    height: 40px;
+    margin-right: 19px;
+    content: '';
+}
+.ba-responsive {
+    background: url("../assets/responsive.png") no-repeat;
+}
+.ba-options {
+    background: url("../assets/options.png") no-repeat;
+}
+.ba-wordpress {
+    background: url("../assets/wordpress.png") no-repeat;
+}
+.ba-commerce {
+    background: url("../assets/commerce.png") no-repeat;
+}
+.ba-design {
+    background: url("../assets/design.png") no-repeat;
+}
+.ba-support {
+    background: url("../assets/support.png") no-repeat;
 }
