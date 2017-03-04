@@ -292,14 +292,12 @@ header.ba-header-flex {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     align-items: flex-start;
 
 }
 .ba-newsletter-work {
     max-width: 487px;
-    align-self: flex-start;
-    /*flex-grow:1;*/
     margin-top: 20px;
     margin-bottom: 20px;
     margin-right:98px;
@@ -308,13 +306,10 @@ header.ba-header-flex {
     color: #ffffff;
 }
 .ba-newsletter__work-btn {
-    width: 165px;
+    max-width: 165px;
     height: 49px;
     background-color: #ffffff;
-    border: none;
-}
-.ba-newsletter__btn-title {
-    color: #7beec7;
+    border: none;color: #7beec7;
     font-size: 14px;
 }
 .ba-newsletter-inform {
@@ -325,7 +320,7 @@ header.ba-header-flex {
     align-items: flex-start;
     padding: 20px;
     max-width: 556px;
-    height: 233px;
+    min-height: 233px;
     background-color: #ffffff;
     margin-top: 50px;
 }
@@ -342,7 +337,6 @@ header.ba-header-flex {
     margin-bottom: 37px;
 }
 .ba-newsletter-form {
-    width: 556px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -350,26 +344,28 @@ header.ba-header-flex {
     margin: 0;
 }
 .ba-newsletter__input {
-    max-width: 375px;
-    min-height: 50px;
-    flex-grow: 2;
+    max-width: 510px;
+    height: 50px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    min-width: 150px;
     border: 1px solid rgba(0, 0, 0, 0.1);
     background-color: #ffffff;
     padding-left: 20px;
 }
 .ba-newsletter__btn {
-    max-width: 135px;
-    min-height: 50px;
     flex-grow: 1;
+    flex-shrink: 1;
+    height: 50px;
+    min-width: 150px;
     background-color: #7beec7;
     border: none;
-}
-.ba-newsletter__button-title {
     color: #ffffff;
     font-size: 14px;
     line-height: 48px;
     text-transform: uppercase;
 }
+
 
 
 
